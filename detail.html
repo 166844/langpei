@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 声明文档使用的字符编码 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!--强制Chromium内核作用于360浏览器、QQ浏览器等国产双核浏览器-->
+		<meta name="renderer" content="webkit" />
+		<!--强制Chromium内核，作用于其他双核浏览器-->
+		<meta name="force-rendering" content="webkit" />
+		<!--如果有安装 Google Chrome Frame 插件则强制为Chromium内核，否则强制本机支持的最高版本IE内核，作用于IE浏览器：-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+		<title>郎培教育</title>
+		<meta name="keywords" content="郎培教育">
+		<meta name="description" content="郎培教育">	
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	</head>
+	<body>
+		<main class="detail">
+			<section class="header">
+				<div class="container clearfix">
+					<span id="num"></span>
+					展位
+					<a href="javascript:history.back(-1)" class="back"></a>
+				</div>
+			</section>
+			<section class="swiBox">
+				<div class="container clearfix">
+					<div class="picsSwi">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="objectCover" src="img/pic.jpg" alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img class="objectCover" src="img/pic.jpg" alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img class="objectCover" src="img/pic.jpg" alt="" />
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination swiper-pagination-white"></div>
+						</div>
+					</div>
+					<img src="img/logo.png" class="logo" />
+				</div>
+			</section>
+			<section class="detailBox">
+				<div class="container">
+					<div class="title">展位详情</div>
+					<div class="article">
+						C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:C.尊享服务:
+					</div>
+				</div>
+			</section>
+			<div class="aside">售价：¥15.88万元<div class="ydBtn" id="ydBtn">立即预订</div></div>
+			<section class="tcBox" id="tc">
+				<div class="blackbg"></div>
+				<div class="box">
+					<img src="img/kefu.png" class="icon" />
+					<div class="tel clearfix">
+						<span>订购热线 :</span>
+						<a href="tel:17380613986">17380613986</a>
+						<a href="tel:18200379330">18200379330</a>
+					</div>
+					<div class="close" id="tcClose"></div>
+				</div>
+			</section>
+		</main>
+		<script src="js/setFontSize.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				const url=location.search;
+				var num=url.split('=')[1];
+				if(num=='%E5%B7%B2%E5%94%AE'){
+					$('#num').text('已售');
+				}else{
+					$('#num').text(num);
+				}
+				
+			})
+		</script>
+	</body>
+</html>
